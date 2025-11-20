@@ -59,5 +59,5 @@ void writeTemperaturePatchNpy(const std::string &filename, const double *data,
     size_t rowsToWrite = (patchIdx < numPatches - 1) ? localNumCellsY - 1 : localNumCellsY;
     rowsToWrite -= startRowSkip;
 
-    appendNpyData(filename, data + startRowSkip * globalNx, localNumCellsX, rowsToWrite);
+    appendNpyData(filename, data + startRowSkip * globalNy, localNumCellsX, rowsToWrite);
 }
