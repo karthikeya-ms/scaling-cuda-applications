@@ -1,0 +1,4 @@
+version: 1
+
+myst:
+  myst_gfm_only: true
